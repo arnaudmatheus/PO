@@ -1,0 +1,40 @@
+4 /tipos de usina
+0 5
+1 6 
+2 7 
+3 2
+/custos de ligação
+0 10000
+1 20000
+2 30000
+3 50000
+/ produção minima
+0 100
+1 200
+2 300
+3 300
+/ produção maximo
+0 1000
+1 2000
+2 3000
+3 3000
+ /custo para produzir o mínimo
+0 1000
+1 2000
+2 3000
+3 3000
+
+/custo para produzir acima do mínimo
+0 1000
+1 2000
+2 3000
+3 3000
+
+7 /periodos do dia
+0 6 12000
+6 9 32000
+9 12 25000
+12 14 36000
+14 18 25000
+18 22 30000
+22 24 18000
