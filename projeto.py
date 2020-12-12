@@ -92,4 +92,22 @@ for linha in arquivo:
     demanda.append(tem[2])
 
 
+solver = pywraplp.Solver.CreateSolver('SCIP')
+infinity = solver.infinity()
+soma = [] # todas as variaveis de cada tipo no problemae
+for j in range(int(qtdTipoUsina)):
+    soma.append(int(fabricas[j]) * int(periodos))
+
+
+
+soma_das_variaveis = sum(soma)
+qtd = {} # possivel variavel de quantidade
+y = {} #possivel variavel de ligação
+for i in range(soma_das_variaveis):
+    qtd[i] = solver.NumVar(0, infinity, 'x[%i]' % j)
+    
+    y[i] = solver.IntVar(0, 1, 'y[%i]' % j)
+
+
+
 
